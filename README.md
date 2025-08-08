@@ -31,51 +31,51 @@ It is developed using Python and Selenium WebDriver following the Page Object Mo
 
    **On Windows:**
 
-   ```bash
-   python -m venv venv
-   .\venv\Scripts\activate
+      ```bash
+         python -m venv venv
+         .\venv\Scripts\activate
 
    **On Mac/Linux:**
 
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
+         ```bash
+         python3 -m venv venv
+         source venv/bin/activate
 
-3. **Install dependencies:**
+  3. **Install dependencies:**
 
-   **On Windows:**
+         ```bash
+         pip install -r requirements.txt
 
-   ```bash
-   pip install -r requirements.txt
+   4. **Run the tests:**
 
-4. **Run the tests:**
+         ```bash
+         python -m unittest discover -s tests
 
-   ```bash
-   python -m unittest discover -s tests
 
 ## 📁 Project Structure 
 
-```bash
-
-├── pages/              # Page Object Model classes
+Tester-Selenium-Project/
+├── pages/
 │   ├── base.py
 │   ├── home.py
 │   ├── career.py
 │   └── qa_jobs.py
-├── tests/              # Test case scripts
+├── tests/
 │   └── test.py
-├── requirements.txt    # Python dependencies
-├── README.md           # Project information
-└── .gitignore          # Git ignore file
+├── requirements.txt
+├── README.md
+└── .gitignore
 
 
-## 📝 Test Scenario 
-Open Insider homepage and verify page title
-Navigate via "Company" > "Careers" menu to the Careers page
-Verify that Locations, Teams, and Life at Insider sections are visible
-Click "See all QA jobs" on the Quality Assurance careers page
-Apply filters: Department = "Quality Assurance", Location = "Istanbul, Turkey"
-Verify that all job listings match the filter criteria
-Click the first "View Role" button and confirm navigation to Lever application page
-On failure, a screenshot is captured
+## 📝 Test Scenario
 
+- Open Insider homepage and verify the page title
+- Navigate through the "Company" menu to the "Careers" page
+- Verify that the Locations, Teams, and Life at Insider sections are visible
+- Click the "See all QA jobs" button on the Quality Assurance careers page
+- Apply filters: Department = "Quality Assurance" and Location = "Istanbul, Turkey"
+- Verify that all listed jobs meet the filter criteria
+- Click the first "View Role" button and confirm navigation to the Lever application page
+- Capture a screenshot if any step fails
+
+    
