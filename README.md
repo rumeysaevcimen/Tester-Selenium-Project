@@ -23,7 +23,6 @@ It is developed using Python and Selenium WebDriver following the Page Object Mo
 
 1. **Clone the repository:**
 
-   ```bash
    git clone https://github.com/rumeysaevcimen/Tester-Selenium-Project.git
    cd Tester-Selenium-Project
 
@@ -31,24 +30,20 @@ It is developed using Python and Selenium WebDriver following the Page Object Mo
 
    **On Windows:**
 
-      ```bash
          python -m venv venv
          .\venv\Scripts\activate
 
    **On Mac/Linux:**
 
-         ```bash
          python3 -m venv venv
          source venv/bin/activate
 
   3. **Install dependencies:**
 
-         ```bash
          pip install -r requirements.txt
 
    4. **Run the tests:**
 
-         ```bash
          python -m unittest discover -s tests
 
 
